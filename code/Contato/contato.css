@@ -1,0 +1,46 @@
+body {
+    font-family: 'Jost', Arial, sans-serif;
+    background-color: #FFF0FD;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;               /* Ativa o Flexbox */
+    justify-content: space-between;     /* Centraliza horizontalmente */
+    align-items: center;         /* Centraliza verticalmente */
+    padding: 10px 30px;            /* Espaçamento vertical */
+}
+
+p{
+    color: #6A0057;
+}
+
+nav ul {
+    flex: 1;                    
+    display: flex;              
+    align-items: center;  
+}
+
+nav ul li {
+
+    margin: 0 40px;            /* Adiciona espaço horizontal entre os itens */
+    display: flex;              /* Ativa Flexbox para os itens (opcional) */
+    
+    
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Configuração do logo da Header */
+.logo {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    margin-right: 20px; /* Espaço entre a logo e os itens de navegação */
+}
