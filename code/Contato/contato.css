@@ -104,3 +104,45 @@ body::after {
         /* Adiciona um espaço abaixo de cada coluna em telas menores */
     }
 }
+
+
+/* contato.css */
+body {
+    background-color: #f8f9fa;
+    /* Cor de fundo suave */
+}
+
+.navbar {
+    margin-bottom: 20px;
+    /* Espaço entre a navbar e o conteúdo */
+}
+
+h1,
+h2 {
+    color: #343a40;
+    /* Cor do texto */
+}
+
+.social-links a {
+    margin-right: 10px;
+    /* Espaçamento entre ícones de redes sociais */
+}
+
+form {
+    border: 1px solid #ced4da;
+    /* Borda do formulário */
+    padding: 20px;
+    height: 400px;
+    width: 500px;
+
+    /* Espaçamento interno do formulário */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    background-color: #fff;
+    /* Fundo branco para o formulário */
+}
+
+#successMessage {
+    color: green;
+    /* Cor da mensagem de sucesso */
+}
