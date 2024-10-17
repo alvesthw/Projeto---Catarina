@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset de margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #007bff;
     --spacing-small: 8px;
@@ -21,6 +30,11 @@ body::after {
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.nav-link {
+    font-family: 'Jost', sans-serif; /* Aplica a fonte Jost */
+    font-size: 13px;
 }
 
 .icon {
