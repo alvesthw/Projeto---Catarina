@@ -10,7 +10,15 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../Sobre/sobre.css">
-        <title>Sobre Nós</title>
+        <style>
+            .navbar {
+                transition: top 0.3s; /* Transição suave */
+            }
+            .navbar-hidden {
+                top: -80px; /* Ajuste este valor conforme necessário para esconder o navbar */
+            }
+        </style>
+        <title>Dra Catarina Bueno - Sobre</title>
     </head>
 
     <body>
@@ -41,54 +49,57 @@
             
             <div class="container mt-5">
                 <header class="row">
-                    <h1 class="col text-center mb-4">Sobre o Profissional</h1>
+                    <h1 class="col text-center mb-4">Sobre Mim</h1>
                 </header>
             
                 <section id="missao" class="mb-5">
                     <h2>Missão</h2>
-                    <p>Oferecer serviços de saúde domiciliar de alta qualidade, promovendo o bem-estar e a qualidade de vida dos
-                        nossos pacientes.</p>
+                    <p class="text-justify">
+                        Ao longo dos anos, desenvolvi um compromisso com a saúde integral das crianças, entendendo que cada pequeno paciente é único e merece atenção personalizada. Minha formação em pediatria, aliada à especialização em infectologia, me permite abordar uma ampla gama de condições de saúde, desde as mais comuns até as mais complexas.
+                    </p>
+                    <p class="text-justify">
+                        Acredito que a comunicação é fundamental para um bom atendimento. Por isso, me esforço para criar um ambiente acolhedor e de confiança, onde as famílias se sintam confortáveis para compartilhar suas preocupações. Estou sempre disponível para esclarecer dúvidas e orientar os pais sobre a melhor forma de cuidar da saúde dos seus filhos.
+                    </p>
+                    <p class="text-justify">
+                        Meu objetivo é não apenas tratar doenças, mas também promover a prevenção e a educação em saúde, ajudando as famílias a construírem hábitos saudáveis desde cedo. Estou aqui para cuidar e acompanhar o desenvolvimento dos pequenos, garantindo que eles tenham um futuro saudável e feliz.
+                    </p>
                 </section>
             
                 <section id="visao" class="mb-5">
-                    <h2>Visão</h2>
-                    <p>Ser referência em cuidados de saúde domiciliar, reconhecida pela excelência no atendimento e pelo compromisso
-                        com a saúde da comunidade.</p>
+                    <h2>Formação</h2>
+                    <p>
+                        Minha formação se iniciou na Faculdade de Medicina da Universidade de Mogi das Cruzes, onde me formei Médica, entre 2011 e 2016. Durante a faculdade, busquei conhecer um pouquinho das diversas áreas dentro da medicina, mas a Pediatria sempre me chamou mais a atenção. Portanto, ao término de minha formação básica, optei por me especializar nesta área, onde sigo em constante aprofundamento.
+                    </p>
+                
+                    <p>
+                        Me formei Pediatra pelo Hospital Regional de Cotia, onde tive contato com a visão geral do pediatra e seus diversos ramos. A Pediatria Geral me cativou incrivelmente, mas um interesse que vinha desde os tempos da faculdade e a associação em complementar minha formação como pediatra me levou à especialização em Infectologia Pediátrica, pelo Instituto da Criança do Hospital das Clínicas da Universidade de São Paulo (USP).
+                    </p>
+                    
+                    <p>
+                        Trabalhei por diversos anos em pronto-socorro infantil nos serviços públicos e particulares. Atualmente, trabalho como Pediatra do pronto-socorro infantil do Hospital Israelita Albert Einstein (HIAE), sou voluntária no Ambulatório de Infectologia Pediátrica do Instituto da Criança (ICr - HCFMUSP) e faço Consultório de Pediatria e Infectologia Pediátrica, incluindo atendimentos domiciliares e Telemedicina.
+                    </p>
                 </section>
-            
-                <section id="valores" class="mb-5">
-                    <h2>Valores</h2>
-                    <ul>
-                        <li>Compromisso com a qualidade</li>
-                        <li>Empatia e respeito</li>
-                        <li>Inovação no atendimento</li>
-                        <li>Transparência e ética</li>
-                    </ul>
-                </section>
-            
-                <section id="equipe" class="mb-5">
-                    <h2>Equipe</h2>
-                    <p>A nossa equipe é composta por profissionais altamente qualificados e dedicados, prontos para atender às
-                        necessidades de cada paciente.</p>
-                </section>
-            
-                <section id="contato" class="mb-5">
-                    <h2>Contato</h2>
-                    <p>Se você deseja saber mais sobre os nossos serviços ou agendar uma consulta, entre em contato conosco:</p>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> (11) 1234-5678</li>
-                        <li><i class="fas fa-envelope"></i> contato@catarinabueno.org</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Cidade, Estado</li>
-                    </ul>
-                </section>
+                
             </div>
-
-
-
-            <footer class="row">
-                <p class="col text-center text-muted">© 2024 Aplicativo Sobre Nós</p>
-            </footer>
         </main>
+
+        <script>
+            let lastScrollTop = 0; // Posição anterior do scroll
+            const navbar = document.querySelector('.navbar'); // Seleciona o navbar
+    
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+                if (currentScroll > lastScrollTop) {
+                    // Rolou para baixo
+                    navbar.classList.add('navbar-hidden');
+                } else {
+                    // Rolou para cima
+                    navbar.classList.remove('navbar-hidden');
+                }
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar valores negativos
+            });
+        </script>
     </body>
 
 </html>
