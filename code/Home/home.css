@@ -23,21 +23,6 @@ body::after {
     right: 0;
 }
 
-.icon {
-    height: 24px;
-    width: 24px;
-    vertical-align: middle;
-    display: inline-block;
-    object-fit: contain;
-}
-
-.chart-container {
-    width: 100%;
-    max-width: var(--max-width-chart);
-    margin: 20px auto;
-}
-
-
 
 /* Flex container for the text and image */
 .informacoes {
