@@ -94,3 +94,34 @@ body::after {
         margin-bottom: 20px;
     }
 }
+
+.social-icons {
+    display: flex;
+    
+    
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 15px;
+    margin-right: 10%;
+     
+}
+
+.social-icons a {
+    color: #6c757d;
+    /* Cor padrão dos ícones */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    /* Cor ao passar o mouse (pode ajustar conforme sua preferência) */
+}
+.melhor-para-criancas .col-md-6 img {
+    max-width: 80%;
+    /* Ajuste o percentual conforme necessário */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem dentro da coluna */
+    display: block;
+}
